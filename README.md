@@ -1,2 +1,3 @@
 # vector-graph-rag
-vector-graph-rag
+vector-graph-rag 提供一种基于图向量特征检索的RAG方式。
+ 
