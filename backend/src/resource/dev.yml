@@ -1,0 +1,23 @@
+APP:
+  ENVIRONMENT: dev
+  # Only accept True or False
+  DEBUG: True
+  APP_NAME: vector-graph-rag
+
+
+NEO4J:
+  URI: "bolt://192.168.101.241:7687"
+  USER_NAME: neo4j
+  PASSWORD: test@neo4j
+
+MILVUS:
+  HOST: 192.168.101.241
+  PORT: 19530
+  USER: root
+  PASSWORD: Milvus
+  SECURE: False
+  DATABASE: default
+  DEFAULT_COLLECTION: "kg_default_coll"
+  NODE_COLL: "kg_node_coll"
+  RELATIONSHIP_COLL: "kg_relationship_coll"
+  GRAPH_PATH_COLL: "kg_graph_path"

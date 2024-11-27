@@ -1,0 +1,44 @@
+APP:
+  ENVIRONMENT: dev
+  # Only accept True or False
+  DEBUG: True
+  APP_NAME: kg-neo4j-llm-rag
+
+REDIS:
+  HOST: redis
+  PORT: 6379
+  PASSWORD: difyai123456
+  DB: 1
+
+NEO4J:
+  URI: "bolt://neo4j:7687"
+  USER_NAME: neo4j
+  PASSWORD: test@neo4j
+
+MILVUS:
+  HOST: milvus-standalone
+  PORT: 19530
+  USER: root
+  PASSWORD: Milvus
+  SECURE: False
+  DATABASE: default
+  DEFAULT_COLLECTION: "kg_default_coll"
+  NODE_COLL: "kg_node_coll"
+  RELATIONSHIP_COLL: "kg_relationship_coll"
+  GRAPH_PATH_COLL: "kg_graph_path"
+
+DIFY:
+  HOST: 47.95.42.136
+  HTTP_HOST: "http://47.95.42.136:8080"
+  PORT: 8080
+  WORKFLOWS_PATH: "/v1/workflows/run"
+  IS_ASK_QUESTION_KEY: "app-OOKaFhke5mzXvkXhqQof983i"
+  DATASETS_KEY: "dataset-KYUTRxfZ4M9rUgEnRrAFfwYK"
+
+POSTGRESQL:
+  HOST: 47.95.42.136
+  PORT: 15432
+  USER: postgres
+  PASSWORD: difyai123456
+  DIFY_DB: dify
+  KG_DB: kg-llm
